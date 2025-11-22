@@ -28,7 +28,7 @@
         <div class="hero-container">
             <div class="hero-text">
                 <h1>HOŞ GELDİNİZ</h1>
-                <p>Saygıoğulları Petrol</p>
+                <p>Saygıoğulları Petrol / Dinlenme Tesisi</p>
             </div>
             <div class="hero-image"></div>
         </div>
@@ -95,8 +95,18 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <h2>İLETİŞİM</h2>
-        <div class="contact-info-simple">
-            <p><i class="fas fa-phone"></i> +90 541 464 59 00</p>
+        <div class="contact-container">
+            <div class="contact-info-simple">
+                <p><i class="fas fa-phone"></i> +90 541 464 59 00</p>
+            </div>
+            <div class="whatsapp-form">
+                <h3>Bize Ulaş</h3>
+                <input id="name" placeholder="Adın" />
+                <input id="email" placeholder="E-posta (opsiyonel)" />
+                <textarea id="message" rows="4" placeholder="Mesajınız..."></textarea>
+                <button id="send" class="whatsapp-btn"><i class="fab fa-whatsapp"></i> WhatsApp ile Gönder</button>
+                <div class="small">Butona bastığınızda WhatsApp açılacak ve mesaj hazırlanacaktır.</div>
+            </div>
         </div>
     </section>
 
@@ -121,7 +131,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2023 Saygıoğlu Petrol. Tüm hakları saklıdır. Site Dizayn Yağız Bingöl</p>
+        <p>&copy; 2023 Saygıoğlu Petrol. Tüm hakları saklıdır.</p>
     </footer>
 
     <!-- Popup Modal -->
@@ -138,6 +148,18 @@
     </div>
 
     <script src="script.js"></script>
+    <script>
+    // WhatsApp form functionality
+    const phone = '905414645900';
+    document.getElementById('send').addEventListener('click', () => {
+        const name = encodeURIComponent(document.getElementById('name').value || 'İsim yok');
+        const email = encodeURIComponent(document.getElementById('email').value || 'E-posta yok');
+        const message = encodeURIComponent(document.getElementById('message').value || 'Mesaj boş');
+        const text = `Yeni%20ileti%20(%20Web%20Formu%20):%0Aİsim:%20${name}%0AE-posta:%20${email}%0AMesaj:%20${message}`;
+        // wa.me formatı:
+        const url = `https://wa.me/${phone}?text=${text}`;
+        window.open(url, '_blank');
+    });
+    </script>
 </body>
-
 </html>

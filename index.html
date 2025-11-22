@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayıoğlu Petrol - Ana Sayfa</title>
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="logo.png" alt="Saygıoğlu Petrol Logo">
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#about" class="nav-link">HAKKIMIZDA</a></li>
+                <li class="nav-item"><a href="#sectors" class="nav-link">SEKTÖRLER</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">İLETİŞİM</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1>HOŞ GELDİNİZ</h1>
+                <p>Saygıoğulları Petrol</p>
+            </div>
+            <div class="hero-image"></div>
+        </div>
+    </section>
+
+    <!-- Sectors Section -->
+    <section id="sectors" class="sectors">
+        <h2>SEKTÖRLER</h2>
+        <div class="sector-container">
+            <div class="sector active" id="sector1">
+                <h3>AKARYAKIT DİNLENME TESİSİ</h3>
+                <p>Modern akaryakıt istasyonlarımızda dinlenme tesislerimizle hizmetinizdeyiz.</p>
+                <button class="contact-btn" onclick="openPopup('AKARYAKIT DİNLENME TESİSİ')">İletişim</button>
+            </div>
+            <div class="sector" id="sector2">
+                <h3>ZAHİRECEİLİK</h3>
+                <p>Kuruluşumuzdan bu yana zahire ticareti alanında faaliyet göstermekteyiz.</p>
+                <button class="contact-btn" onclick="openPopup('ZAHİRECEİLİK')">İletişim</button>
+            </div>
+            <div class="sector" id="sector3">
+                <h3>İNŞAAT & KENTSEL DÖNÜŞÜM</h3>
+                <p>Modern şehirleşmenin gereği olan kentsel dönüşüm projelerinde yer almaktayız.</p>
+                <button class="contact-btn" onclick="openPopup('İNŞAAT & KENTSEL DÖNÜŞÜM')">İletişim</button>
+            </div>
+            <div class="sector" id="sector4">
+                <h3>KURTARICI VE VİNÇ HİZMETLERİ</h3>
+                <p>7/24 kurtarıcı ve vinç hizmetleriyle her zaman yanınızdayız.</p>
+                <button class="contact-btn" onclick="openPopup('KURTARICI VE VİNÇ HİZMETLERİ')">İletişim</button>
+            </div>
+            <div class="sector" id="sector5">
+                <h3>TARIM</h3>
+                <p>Tarım sektöründe modern teknolojilerle üretimin öncüsüyüz.</p>
+                <button class="contact-btn" onclick="openPopup('TARIM')">İletişim</button>
+            </div>
+            <div class="sector" id="sector6">
+                <h3>İÇ MİMARLIK</h3>
+                <p>Estetik ve fonksiyonelliği birleştiren iç mimari çözümler sunuyoruz.</p>
+                <button class="contact-btn" onclick="openPopup('İÇ MİMARLIK')">İletişim</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <div class="about-section">
+                <h2>Hakkımızda</h2>
+                <p>Ticari faaliyetlerinin temelleri 1970'li yıllara dayanan Saygıoğulları Ailesi Tekirdağ/Süleymanpaşa ilçesinde Akaryakıt, Zahirecilik (Tarım Ürünleri Alım Satımı), Kimyevi - Organomineral Gübre Satışı - İnşaat & Kentsel Dönüşüm - Kurtarıcı ve Vinç Hizmetleri - İç MİMARLIK gibi pek çok alanda faaliyet göstermektedir. Kuşaklardır birlikteliğini koruyan ailemiz, kaliteli iş yaparak bilinir olmayı geleneksel aile değerlerini koruyarak girdiği her sektörde dürüstlüğü, müşteri memnuniyetini ve kaliteli hizmeti kendine ilke edinmiştir.</p>
+            </div>
+            
+            <div class="about-section">
+                <h2>Misyon</h2>
+                <p>Sektörde geçirdiğimiz 40 yılın sırrı temel ilkemiz olan dürüstlüğümüzde saklı…</p>
+                <p>Birlikteliğimizden gelen güçle, kalite, güven ve iş ahlakı değerlerimizi birleştirerek daima en iyiyi üretmek, geliştirmek ve sunmak adına tüm çalışanlarımız, müşterilerimiz ve iş ortaklarımız ile birlikte bulunduğumuz sektörlerde sosyal sorumluluklarını bilen, yenilikçi ve her zaman liderliği hedefleyen öncü bir şirket olmak</p>
+            </div>
+            
+            <div class="about-section">
+                <h2>Vizyon</h2>
+                <p>Mesleki standartlar ve etik ilkeler doğrultusunda, ülke genelinde hizmet veren, iş yaptığımız her sektörde en iyi ve yenilikçi olabilmek. Kalite anlayışını sürekli geliştirerek, kaliteli ürünler ve hizmet anlayışına süreklilik kazandırmak ve bunların yanı sıra, insana ve çevreye duyarlı öncü ve örnek bir şirket olmak.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>İLETİŞİM</h2>
+        <div class="contact-info-simple">
+            <p><i class="fas fa-phone"></i> +90 541 464 59 00</p>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="social-media">
+        <h2>SOSYAL MEDYA HESAPLARIMIZ</h2>
+        <div class="social-links">
+            <a href="https://www.facebook.com/saygiogullari" target="_blank" class="social-link">
+                <i class="fab fa-facebook-f"></i>
+                <span>Facebook</span>
+            </a>
+            <a href="https://x.com/saygiogullari" target="_blank" class="social-link">
+                <i class="fab fa-twitter"></i>
+                <span>X (Twitter)</span>
+            </a>
+            <a href="https://www.instagram.com/saygiogullaripetrol/" target="_blank" class="social-link">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2023 Saygıoğlu Petrol. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <!-- Popup Modal -->
+    <div id="contact-popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2 id="popup-title">İletişim Bilgileri</h2>
+            <div class="contact-info">
+                <p><i class="fas fa-phone"></i> <span id="phone-number">+90 555 555 55 55</span></p>
+                <p><i class="fas fa-envelope"></i> <span id="email">info@saygiogullari.com</span></p>
+                <p><i class="fas fa-map-marker-alt"></i> <span id="address">İstanbul, Türkiye</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
